@@ -10,6 +10,7 @@ import {
   getBalances,
   getSumCollectivesAmountReceived,
   getSumCollectivesAmountSpent,
+  getYearlyIncome,
   sumCollectivesTransactions,
 } from '../../lib/budget';
 import { getFxRate } from '../../lib/currency';
@@ -242,6 +243,8 @@ export const loaders = req => {
   );
 
   context.loaders.Collective.canSeePrivateInfo = collectiveLoaders.canSeePrivateInfo(req, cache);
+
+  context.loaders.Collective.yearlyIncome = new DataLoader(ids => getYearlyIncome(ids));
 
   // Collective - Stats
   context.loaders.Collective.stats = {

@@ -2761,7 +2761,7 @@ Collective.prototype.getBalance = function (options) {
 };
 
 Collective.prototype.getYearlyIncome = function () {
-  return getYearlyIncome(this);
+  return getYearlyIncome(this.id);
 };
 
 Collective.prototype.getTotalAmountReceivedAmount = function (options) {
