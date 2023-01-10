@@ -45,7 +45,7 @@
     "@sentry/tracing": "7.29.0",
     "@sentry/types": "7.29.0",
     "apollo-server-errors": "3.3.1",
-    "apollo-server-express": "3.9.0",
+    "apollo-server-express": "3.11.1",
     "argparse": "2.0.1",
     "aws-sdk": "2.1291.0",
     "axios": "0.27.2",
